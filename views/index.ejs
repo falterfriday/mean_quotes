@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Quotable-Quotes</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.css">
+	<style media="screen">
+		.wrapper {
+			width: 90%;
+			margin: auto;
+		}
+		#name {
+			width: 20%;
+		}
+		.button {
+
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<h1>Welcome to Quotable-Quotes</h1>
+		<!-- Add Quote -->
+		<form action="/quotes" method="post">
+			Your Name: <input id="name" type="text" name="name"><br>
+			Your Quote:<textarea name="quote" rows="8" cols="40"></textarea><br>
+			<input class="success button" type="submit" value="Add my quote!">
+		</form>
+		<!-- Go to Quotes Page -->
+		<form action="/quotes">
+			<input class="alert button" type="submit" value="Skip to quotes!">
+		</form>
+	</div>
+</body>
+</html>
