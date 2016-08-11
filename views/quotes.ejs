@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Quotable-Quotes</title>
+	<style media="screen">
+		.wrapper {
+			width: 90%;
+			margin: auto;
+		}
+		h1 {
+			margin-bottom: 45px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<h1>Here are some awesome quotes!</h1>
+		<% for (var i in quotes) { %>
+		<h4>"<%= quotes[i].quote%>"</h4>
+		<blockquote>
+			- <%= quotes[i].name%> on <%= quotes[i].date%>
+		</blockquote>
+		<hr>
+		<% } %>
+	</div>
+</body>
+</html>
